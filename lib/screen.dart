@@ -37,15 +37,23 @@ class HomeScreen extends StatelessWidget {
                   ],
                 ),
               ),
-              TextField(
-                decoration: InputDecoration(
-                    border: OutlineInputBorder(
-                      borderRadius: BorderRadius.circular(10.0),
-                    ),
-                    filled: true,
-                    hintStyle: TextStyle(color: Colors.grey[800]),
-                    hintText: "Type in your text",
-                    fillColor: Colors.white70),
+              Padding(
+                padding: const EdgeInsets.only(
+                  top: 20,
+                  right: 60,
+                ),
+                child: TextField(
+                  decoration: InputDecoration(
+                      prefixIcon: Icon(Icons.search),
+                      suffixIcon: Icon(Icons.filter),
+                      border: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(30.0),
+                      ),
+                      filled: true,
+                      hintStyle: TextStyle(color: Colors.grey[800]),
+                      hintText: "Search",
+                      fillColor: Color.fromARGB(60, 179, 176, 176)),
+                ),
               ),
             ],
           ),
