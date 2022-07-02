@@ -85,13 +85,13 @@ class HomeScreen extends StatelessWidget {
                     width: double.infinity,
                     child: ListView.separated(
                       scrollDirection: Axis.horizontal,
-                      itemCount: itemdetails.length,
+                      itemCount: 20,
                       separatorBuilder: (context, index) => SizedBox(
                         width: 20,
                       ),
                       shrinkWrap: true,
                       itemBuilder: (context, index) =>
-                          newMethod(itemdetail: itemdetails[index]),
+                          Image.asset("assets/images/02.jpg"),
                     )),
               )
             ],
